@@ -6,7 +6,7 @@ function ServiceCard({image, title, paragraph}) {
     return (
         <ServiceCardStyled >
             <div className="container">
-                <img src={image} alt="image"/>
+                <img src={image} alt=""/>
                 <Fade top>
                   <h2>{title}</h2>
                   <p>{paragraph}</p>

@@ -20,7 +20,7 @@ function BlogsPage() {
                             return <div key={blog.id} className={'blog-item'}>
                               <Zoom>
                                   <div className="image">
-                                      <img src={blog.image} alt="award image"/>
+                                      <img src={blog.image} alt=""/>
                                   </div>
                                 </Zoom>
                                 <div className="title">

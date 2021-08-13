@@ -2,18 +2,12 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import {MainLayout, InnerLayout} from '../styles/Layouts';
 import Title from '../Components/Title';
-import PrimaryButton from '../Components/PrimaryButton';
-import ContactItem from '../Components/ContactItem';
 import Chatbot from 'react-chatbot-kit';
 import Particle from '../Components/Particle';
 
 import ActionProvider from '../Chatbot/ActionProvider';
 import MessageParser from '../Chatbot/MessageParser';
 import config from '../Chatbot/config';
-const dotenv = require('dotenv');
-dotenv.config();
-
-
 
 
 function ContactPage() {
@@ -27,10 +21,7 @@ function ContactPage() {
 
  const onChange = e => setFormData({ ...formData, [e.target.name]: e.target.value });
 
- const onSubmit = e => {
-   e.preventDefault();
-
- }
+ 
     return (
         <MainLayout>
 
@@ -44,7 +35,7 @@ function ContactPage() {
                     <div className="contact-title">
                         <h4>Get In Touch</h4>
                     </div>
-                    <form  className="form" onSubmit={e => onSubmit(e)}>
+                    <form  className="form">
                         <div className="form-field">
                             <label htmlFor="name"  >Enter your name*</label>
                             <input type="text" id="name"  />
@@ -59,7 +50,7 @@ function ContactPage() {
                         </div>
                         <div className="form-field">
                             <label htmlFor="text-area">Enter recommendation*</label>
-                            <textarea name="textarea" id="textarea" cols="30" rows="10" name="text" value={text} onChange={e => onChange(e)} required></textarea>
+                            <textarea  id="textarea" cols="30" rows="10" name="text" value={text} onChange={e => onChange(e)} required></textarea>
                         </div>
                         <div className="form-field f-button">
 

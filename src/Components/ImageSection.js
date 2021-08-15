@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import resume from '../img/resume.jpg';
+import resume from '../img/me.jpg';
 import PrimaryButton from './PrimaryButton';
 import { Wave1 } from '../data/examples.js';
 import Fade from 'react-reveal/Fade';

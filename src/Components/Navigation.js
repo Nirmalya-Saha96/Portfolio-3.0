@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import {NavLink} from 'react-router-dom';
-import resume from '../img/resume.jpg';
+import resume from '../img/me2.jpg';
 
 function Navigation() {
     return (

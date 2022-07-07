@@ -16,13 +16,13 @@ function ReviewsSetion() {
                         text={'Software Engineering Roles'}
                     />
                     <ReviewItem
-                        text={'Intern Roles as Software Developer'}
+                        text={'Intern Roles as Developer'}
                     />
                     <ReviewItem
-                        text={'Project Colaboration and Open Source'}
+                        text={'Project Colaboration, Hackathons and Open Source'}
                     />
                     <ReviewItem
-                        text={'Providing Web-Android Solutions'}
+                        text={'Providing Web-BlockChain-Cloud-Android Solutions'}
                     />
 
                 </div>

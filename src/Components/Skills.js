@@ -22,19 +22,29 @@ function Skills() {
                             text={'65%'}
                         />
                         <ProgressBar
+                            title={'Solidity'}
+                            width={'75%'}
+                            text={'75%'}
+                        />
+                        <ProgressBar
                             title={'REACT JS'}
-                            width={'90%'}
-                            text={'90%'}
+                            width={'100%'}
+                            text={'100%'}
                         />
                         <ProgressBar
                             title={'REDUX'}
-                            width={'50%'}
-                            text={'50%'}
+                            width={'100%'}
+                            text={'100%'}
+                        />
+                        <ProgressBar
+                            title={'Next JS'}
+                            width={'80%'}
+                            text={'80%'}
                         />
                         <ProgressBar
                             title={'NODE JS'}
-                            width={'60%'}
-                            text={'60%'}
+                            width={'80%'}
+                            text={'80%'}
                         />
                         <ProgressBar
                             title={'EXPRESS'}
@@ -72,9 +82,9 @@ function Skills() {
                             text={'100%'}
                         />
                         <ProgressBar
-                            title={'Cryptography'}
-                            width={'80%'}
-                            text={'80%'}
+                            title={'Cryptography-AES'}
+                            width={'50%'}
+                            text={'50%'}
                         />
                         <ProgressBar
                             title={'JAVASCRIPT'}
@@ -95,6 +105,21 @@ function Skills() {
                             title={'Rest-Api'}
                             width={'85%'}
                             text={'85%'}
+                        />
+                        <ProgressBar
+                            title={'BlockChain'}
+                            width={'50%'}
+                            text={'50%'}
+                        />
+                        <ProgressBar
+                            title={'IPFS-Network'}
+                            width={'60%'}
+                            text={'60%'}
+                        />
+                        <ProgressBar
+                            title={'Python'}
+                            width={'20%'}
+                            text={'20%'}
                         />
                     </div>
                 </InnerLayout>

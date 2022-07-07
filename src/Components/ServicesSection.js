@@ -16,7 +16,12 @@ function ServicesSection() {
                     <ServiceCard
                         image={design}
                         title={'Full Stack Development'}
-                        paragraph={'1 year of experience as a Full Stack Developer'}
+                        paragraph={'1 year+ of experience as a Full Stack Developer & Cloud Architect'}
+                    />
+                    <ServiceCard
+                        image={design}
+                        title={'BlockChain Development'}
+                        paragraph={'Experienced in Developing decentralized apps with NFT transactions'}
                     />
                     <div className="mid-card">
                         <ServiceCard
@@ -28,8 +33,22 @@ function ServicesSection() {
                     <ServiceCard
                         image={gamedev}
                         title={'Coder'}
-                        paragraph={'Compitive Coder with profiles in GFG and CodeChef'}
+                        paragraph={'Compitive Coder with 14th rank in GFG & 3* coder in CodeChef'}
                     />
+                     <div className="mid-card">
+                        <ServiceCard
+                            image={intelligence}
+                            title={'Media Branding'}
+                            paragraph={'Skilled in personal and business branding'}
+                        />
+                    </div>
+                    <div className="mid-card">
+                        <ServiceCard
+                            image={intelligence}
+                            title={'Freelance Developer'}
+                            paragraph={'Experienced in managing 7+ real world projects'}
+                        />
+                    </div>
                 </div>
             </ServicesSectionStyled>
         </InnerLayout>

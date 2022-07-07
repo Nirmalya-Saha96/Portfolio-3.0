@@ -11,7 +11,7 @@ function HomePage() {
 
     useEffect(() => {
         const myElement = document.querySelector('#myElement')
-      	init(myElement, { showCursor: false, strings: ['Full Stack Developer', 'Android Developer ✨', '< Coder >' ] });
+      	init(myElement, { showCursor: false, strings: ['Full Stack Developer', 'Android Developer', 'BlockChain Developer', '< Coder />' ] });
     },[]);
     return (
         <HomePageStyled>

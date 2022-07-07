@@ -19,6 +19,28 @@ function Resume() {
                 </div>
                 <div className="resume-content">
                 <ResumeItem
+                    year={'July22-Present'}
+                    title={'FrontEnd Developer Intern'}
+                    subTitle={'Delta-V Robotics Pvt Ltd'}
+                    text={'- Designed complex satellite simulation interface in a Konva Minimap & zoom controls'}
+                    text1={' with  seamless functionality using react, redux'}
+                    text2={'- Programmed functionalities include sharing & custom linking simulations '}
+                    text3={''}
+                    text4={''}
+                    text5={''}
+                />
+                <ResumeItem
+                    year={'March22-June22'}
+                    title={'Full Stack Developer Intern'}
+                    subTitle={'NamaSYS'}
+                    text={'- Migrated static response to json with it’s FrontEnd integrations increasing efficiency by 45%'}
+                    text1={'- Admin Panel to control core functionalities with create upload delete and custom update '}
+                    text2={'- engines, subscriptions, user managements, categories, UI-fonts & colors'}
+                    text3={'- Improving user retention & business logic by 12% by developing recurring subscription using Stripe'}
+                    text4={' Payments and custom search, errors & alerts managements with 30+ Apis tests in postman-cli and newman'}
+                    text5={'- Designed Json Previewer with RealTime editor & image uploading in IPFS-network with base64 encoding & 7+ Html Jinja Email Templates'}
+                />
+                <ResumeItem
                     year={'Oct21 - Present'}
                     title={'Freelance Full Stack & Android Developer'}
                     subTitle={'Freelancer'}
@@ -30,7 +52,7 @@ function Resume() {
                     text5={'- Experienced in Developing and Designing Individual Portfolio Pages'}
                 />
                     <ResumeItem
-                        year={'June21 - Present'}
+                        year={'June21 - May22'}
                         title={'Campus Mantri'}
                         subTitle={'Geeks For Geeks'}
                         text={'- Campus Manager at GeeksForGeeks, organised events and workshops, online talks about new age technologies'}
@@ -45,7 +67,7 @@ function Resume() {
                         title={'Web Developer Intern'}
                         subTitle={'LetsGrowMore'}
                         text={'-student result management portal system'}
-                        text1={'- Worked in React.Js frameworks, and Node.JS as a back-end to store student results in MongoDB'}
+                        text1={'- Worked in React.Js & Redux.Js frameworks, and Node.JS as a back-end to store student results in MongoDB'}
                         text2={''}
                         text3={''}
                         text4={''}
@@ -55,7 +77,7 @@ function Resume() {
                         year={'Sep21 - Oct21'}
                         title={'Web Developer & Design Intern'}
                         subTitle={'The Sparks Foundation'}
-                        text={'- Developed payment gateway integration system'}
+                        text={'- Developed payment gateway integration system using stripe-api'}
                         text1={''}
                         text2={''}
                         text3={''}
@@ -66,7 +88,7 @@ function Resume() {
                         year={'April21 - June21'}
                         title={'Web Developer Intern'}
                         subTitle={'SSB Info Pvt Ltd'}
-                        text={'- Designed the business page and client records page with React.JS as the main framework'}
+                        text={'- Designed the business page and client records page with React.JS and Redux.Js as the main framework with custom filters and pagination '}
                         text1={'- Collaborated and solved client issued technical faults'}
                         text2={''}
                         text3={''}
@@ -94,7 +116,7 @@ function Resume() {
                         title={'Computer Science and Engineering'}
                         subTitle={'Haldia Institute of Technology'}
                         text={'- Bachelor of Technology in Computer Science and Engineering at HIT-Haldia'}
-                        text1={'- CGPA: 9.97/10 '}
+                        text1={'- CGPA: 9.97/10 in 1st year and 9.62 in 2nd Year'}
                         text2={''}
                         text3={''}
                         text4={''}
@@ -103,7 +125,7 @@ function Resume() {
                     <ResumeItem
                         year={'2018 - 2020'}
                         title={'CBSE 12 Science'}
-                        subTitle={'Sudhir Memorial Institute'}
+                        subTitle={'Sudhir Memorial'}
                         text={'- Central Board of Secondary Education (Class XII), '}
                         text1={'- with Computer Science, Maths, Physics, Chemistry, English as subjects'}
                         text2={'- Aggregate: 90%'}

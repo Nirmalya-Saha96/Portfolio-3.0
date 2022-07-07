@@ -40,7 +40,7 @@ function ImageSection() {
                     </div>
                 </div>
                 </Fade>
-                <PrimaryButton title={'Download Cv'} link={'https://drive.google.com/file/d/19pkjcObEguoQSF-oMnwL3EZW5TAOA3BX/view?usp=sharing'} />
+                <PrimaryButton title={'Download Cv'} link={'https://docs.google.com/document/d/10LX1nVAK4ELYrUCBrn1AzD4eQrYcMuAnk3UM6-uCxz0/edit?usp=sharing'} />
             </div>
         </ImageSectionStyled>
     )

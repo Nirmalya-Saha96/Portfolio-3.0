@@ -15,9 +15,17 @@ function ImageSection() {
                 <h4>I am <span> <Wave1 /></span></h4>
                 <Fade top>
                   <p className="paragraph">
-                  Second year student of HALDIA INSTITUTE OF TECHNOLOGY ||CSE|| with 9.97 CGPA
-                  Providing Service in Full Stack Development and Android Development ( with experience of managing 7+ real world projects).
-                  Industry Experience in Web Development and Designing Intern @The Sparks Foundation || Web Developer Intern @LetsGrowMore || Web Developer Intern @SSB Pvt Ltd || Campus Manager @GeeksForGeeks ||Core team member of taru guardians || web developer at Hitian Inside and Hit needs || ISP @ Internshala
+                  Second year student of HALDIA INSTITUTE OF TECHNOLOGY ||CSE|| with 9.97 CGPA 1st & 9.62 CGPA 2nd Year
+                  Providing Service in Full Stack BlackChain Development and Android Development ( with experience of managing 7+ real world projects).
+                  Industry Experience in FrontEnd Developer Intern @Delta-V Robotics Pvt Ltd ||
+                  Full Stack Developer Intern @NamaSYS || 
+                  Web Development and Designing Intern @The Sparks Foundation || 
+                  Web Developer Intern @LetsGrowMore || 
+                  Web Developer Intern @SSB Pvt Ltd || 
+                  Campus Manager @GeeksForGeeks || 
+                  Core team member of taru guardians || 
+                  web developer at Hitian Inside and Hit needs || 
+                  ISP @ Internshala
                   </p>
                 </Fade>
                 <Fade bottom>
@@ -33,7 +41,7 @@ function ImageSection() {
                     <div className="info">
                         <p>: Nirmalya</p>
                         <p>: Saha</p>
-                        <p>: 20</p>
+                        <p>: 21</p>
                         <p>: Indian </p>
                         <p>: West Bengal</p>
                         <p>: Developer</p>

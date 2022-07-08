@@ -11,36 +11,40 @@ class MessageParser {
       this.actionProvider.greet();
     }
 
-    if(lowerCaseMessage.includes('yes')) {
+    else if(lowerCaseMessage.includes('yes')) {
       this.actionProvider.vedio();
     }
 
-    if(lowerCaseMessage.includes('email')) {
+    else if(lowerCaseMessage.includes('email')) {
       this.actionProvider.Face();
     }
 
-    if(lowerCaseMessage.includes('address')) {
+    else if(lowerCaseMessage.includes('address')) {
       this.actionProvider.faceUse();
     }
 
-    if(lowerCaseMessage.includes('social')) {
+    else if(lowerCaseMessage.includes('social')) {
       this.actionProvider.colab();
     }
 
-    if(lowerCaseMessage.includes('linkedin')) {
+    else if(lowerCaseMessage.includes('linkedin')) {
       this.actionProvider.colabUse();
     }
 
-    if(lowerCaseMessage.includes('github')) {
+    else if(lowerCaseMessage.includes('github')) {
       this.actionProvider.codeP();
     }
 
-    if (lowerCaseMessage.includes('good')) {
+    else if (lowerCaseMessage.includes('good')) {
       this.actionProvider.feedback();
     }
 
-    if (lowerCaseMessage.includes('bad')) {
+    else if (lowerCaseMessage.includes('bad')) {
       this.actionProvider.feedback();
+    }
+
+    else {
+      this.actionProvider.sorry();
     }
   }
 }

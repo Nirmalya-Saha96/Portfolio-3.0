@@ -173,7 +173,7 @@ const ContactPageStyled = styled.section`
               flex-direction: column;
               align-items: center;
 
-              font-size: 0.5rem;
+              font-size: 2px;
               color: rgb(98, 220, 236);
             }
             @media screen and (max-width: 502px){

@@ -7,11 +7,9 @@ class ActionProvider {
 
   // new method
   greet() {
-    const greetingMessage = this.createChatBotMessage('Nice to you');
-    const greeting = this.createChatBotMessage('I am a Full Stack & Android Developer');
+    const greeting = this.createChatBotMessage('I am a Full BlockChain Stack & Android Developer');
     const greetnext = this.createChatBotMessage('want to contact me?');
 
-    this.updateChatbotState(greetingMessage);
     this.updateChatbotState(greeting);
     this.updateChatbotState(greetnext);
   }
@@ -40,13 +38,9 @@ class ActionProvider {
 
   faceUse = () => {
     const fu = this.createChatBotMessage('I am from');
-    const fuuu = this.createChatBotMessage('West Bengal');
-    const ff = this.createChatBotMessage(
-      'India',
-    );
+    const fuuu = this.createChatBotMessage('West Bengal, India');
     this.updateChatbotState(fu);
     this.updateChatbotState(fuuu);
-    this.updateChatbotState(ff);
   }
 
   colab = () => {
@@ -81,6 +75,13 @@ class ActionProvider {
       'Thankyou..',
     );
     this.updateChatbotState(feedback);
+  }
+
+  sorry = () => {
+    const sorry = this.createChatBotMessage(
+      'Sorry could not get you',
+    );
+    this.updateChatbotState(sorry);
   }
 
 

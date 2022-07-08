@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
 import {MainLayout, InnerLayout} from '../styles/Layouts';
 import Title from '../Components/Title';
@@ -12,16 +13,34 @@ import config from '../Chatbot/config';
 
 
 function ContactPage() {
+
   const [formData, setFormData] = useState({
    name: '',
    sub: '',
-   text:''
+   text:'',
+   email: '',
  });
 
- const { name, sub, text } = formData;
+ const { name, sub, text, email } = formData;
 
  const onChange = e => setFormData({ ...formData, [e.target.name]: e.target.value });
 
+ const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.send("service_dls3jue","template_mpca4wn",{
+      subject: sub,
+      message: text,
+      from_name: name,
+      email: email,
+      }, 
+      "rj6hzFcdSAmlmCXzO")
+      .then((result) => {
+        console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+  };
 
     return (
         <MainLayout>
@@ -36,14 +55,15 @@ function ContactPage() {
                     <div className="contact-title">
                         <h4>Get In Touch</h4>
                     </div>
-                    <form  className="form">
+                    <form  className="form" onSubmit={sendEmail}>
                         <div className="form-field">
                             <label htmlFor="name"  >Enter your name*</label>
-                            <input type="text" id="name"  />
+                            {/* <input type="text" id="name"  /> */}
+                            <input type="text" id="name" name="name" value={name} onChange={e => onChange(e)} required />
                         </div>
                         <div className="form-field">
                             <label htmlFor="email"  >Enter your email*</label>
-                            <input type="email" id="email" name="name" value={name} onChange={e => onChange(e)} required />
+                            <input type="email" id="email" name="email" value={email} onChange={e => onChange(e)} required />
                         </div>
                         <div className="form-field">
                             <label htmlFor="subject"  >Enter subject</label>
@@ -57,7 +77,7 @@ function ContactPage() {
 
                             <input type="submit" className="btn" />
                         </div>
-                        <PrimaryButton title={'Drop an Email'} link={'mailto:nirmalya.saha201@gmail.com'} />
+                        {/* <PrimaryButton title={'Drop an Email'} link={'mailto:nirmalya.saha201@gmail.com'} /> */}
                     </form>
                 </div>
                 <div className="right-content">

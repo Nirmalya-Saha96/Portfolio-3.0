@@ -1,10 +1,9 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
 import {MainLayout, InnerLayout} from '../styles/Layouts';
 import Title from '../Components/Title';
 import Chatbot from 'react-chatbot-kit';
-import PrimaryButton from '../Components/PrimaryButton';
 import Particle from '../Components/Particle';
 
 import { ToastContainer, toast } from 'react-toastify';

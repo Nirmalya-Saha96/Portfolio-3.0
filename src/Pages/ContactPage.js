@@ -7,6 +7,9 @@ import Chatbot from 'react-chatbot-kit';
 import PrimaryButton from '../Components/PrimaryButton';
 import Particle from '../Components/Particle';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import ActionProvider from '../Chatbot/ActionProvider';
 import MessageParser from '../Chatbot/MessageParser';
 import config from '../Chatbot/config';
@@ -28,6 +31,8 @@ function ContactPage() {
  const sendEmail = (e) => {
     e.preventDefault();
 
+    const id = toast.loading("Email Is Sending...")
+
     emailjs.send("service_dls3jue","template_mpca4wn",{
       subject: sub,
       message: text,
@@ -37,13 +42,28 @@ function ContactPage() {
       "rj6hzFcdSAmlmCXzO")
       .then((result) => {
         console.log(result.text);
+        toast.update(id, { render: "Email Sent", type: "success", isLoading: false, autoClose: 3000  });
+            setFormData({
+                name: '',
+                sub: '',
+                text:'',
+                email: '',
+            });
         }, (error) => {
             console.log(error.text);
+            toast.update(id, { render: "Something Went Wrong", type: "error", isLoading: false, autoClose: 3000  });
+                setFormData({
+                    name: '',
+                    sub: '',
+                    text:'',
+                    email: '',
+                });
         });
   };
 
     return (
         <MainLayout>
+        <ToastContainer />
 
             <Title title={'Contact'} span={'Contact'} />
             <ContactPageStyled >

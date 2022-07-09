@@ -9,6 +9,9 @@ import Particle from '../Components/Particle';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+import ScrollToTop from 'react-scroll-up';
+import { KeyboardArrowUpRounded } from '@material-ui/icons';
+
 import ActionProvider from '../Chatbot/ActionProvider';
 import MessageParser from '../Chatbot/MessageParser';
 import config from '../Chatbot/config';
@@ -69,6 +72,9 @@ function ContactPage() {
             <div className="particle-con particles">
                 <Particle />
             </div>
+            <ScrollToTop showUnder={250}>
+                    <KeyboardArrowUpRounded style={{width: "45px", border: "solid", borderRadius: "0.5px"}} />
+            </ScrollToTop>
             <InnerLayout className={'contact-section'}>
                 <div className="left-content">
                     <div className="contact-title">
@@ -76,12 +82,12 @@ function ContactPage() {
                     </div>
                     <form  className="form" onSubmit={sendEmail}>
                         <div className="form-field">
-                            <label htmlFor="name"  >Enter your name*</label>
+                            <label htmlFor="name"  >Enter name*</label>
                             {/* <input type="text" id="name"  /> */}
                             <input type="text" id="name" name="name" value={name} onChange={e => onChange(e)} required />
                         </div>
                         <div className="form-field">
-                            <label htmlFor="email"  >Enter your email*</label>
+                            <label htmlFor="email"  >Enter email*</label>
                             <input type="email" id="email" name="email" value={email} onChange={e => onChange(e)} required />
                         </div>
                         <div className="form-field">
@@ -89,7 +95,7 @@ function ContactPage() {
                             <input type="text" id="subject" name="sub" value={sub} onChange={e => onChange(e)} required/>
                         </div>
                         <div className="form-field">
-                            <label htmlFor="text-area">Enter recommendation*</label>
+                            <label htmlFor="text-area">Enter message*</label>
                             <textarea  id="textarea" cols="30" rows="10" name="text" value={text} onChange={e => onChange(e)} required></textarea>
                         </div>
                         <div className="form-field f-button">

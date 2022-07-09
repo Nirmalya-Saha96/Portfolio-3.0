@@ -6,6 +6,8 @@ import portfolios from '../data/portfolios';
 import Menu from '../Components/Menu';
 import Button from '../Components/Button';
 import Particle from '../Components/Particle';
+import ScrollToTop from 'react-scroll-up';
+import { KeyboardArrowUpRounded } from '@material-ui/icons';
 
 const allButtons = ['All', ...new Set(portfolios.map(item => item.category))]
 
@@ -29,6 +31,9 @@ function PortfoliosPage() {
             <div className="particle-con particles">
                 <Particle />
             </div>
+            <ScrollToTop showUnder={250}>
+                    <KeyboardArrowUpRounded style={{width: "45px", border: "solid", borderRadius: "0.5px"}} />
+            </ScrollToTop>
             <Title title={'Projects'} span={'projects'} />
             <InnerLayout>
 

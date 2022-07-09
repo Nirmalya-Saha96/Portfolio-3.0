@@ -5,6 +5,8 @@ import blogs from '../data/blogs';
 import {MainLayout, InnerLayout} from '../styles/Layouts';
 import Particle from '../Components/Particle';
 import Zoom from 'react-reveal/Zoom';
+import ScrollToTop from 'react-scroll-up';
+import { KeyboardArrowUpRounded } from '@material-ui/icons';
 
 function BlogsPage() {
     return (
@@ -13,6 +15,9 @@ function BlogsPage() {
             <div className="particle-con particles">
                 <Particle />
             </div>
+            <ScrollToTop showUnder={250}>
+                    <KeyboardArrowUpRounded style={{width: "45px", border: "solid", borderRadius: "0.5px"}} />
+            </ScrollToTop>
             <Title title={'Achievements'} span={'Achievements'} />
                 <InnerLayout className={'blog'}>
                     {

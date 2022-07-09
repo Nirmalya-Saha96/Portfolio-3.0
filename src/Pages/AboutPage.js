@@ -6,6 +6,8 @@ import {MainLayout} from '../styles/Layouts';
 import Services from '../Components/ServicesSection';
 import Reviews from '../Components/ReviewsSetion';
 import Particle from '../Components/Particle';
+import ScrollToTop from 'react-scroll-up';
+import { KeyboardArrowUpRounded } from '@material-ui/icons';
 
 function AboutPage() {
     return (
@@ -14,6 +16,9 @@ function AboutPage() {
                 <div className="particle-con particles">
                     <Particle />
                 </div>
+                <ScrollToTop showUnder={250}>
+                    <KeyboardArrowUpRounded style={{width: "45px", border: "solid", borderRadius: "0.5px"}} />
+                </ScrollToTop>
                 <Title title={'About Me'} span={'About Me'} />
                 <Image />
                 <Services />

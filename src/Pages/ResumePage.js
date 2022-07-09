@@ -5,6 +5,8 @@ import { MainLayout} from '../styles/Layouts';
 import Resume from '../Components/Resume';
 import PositionsOfResponsibility from '../Components/PositionsOfResponsibility';
 import Particle from '../Components/Particle';
+import ScrollToTop from 'react-scroll-up';
+import { KeyboardArrowUpRounded } from '@material-ui/icons';
 
 function ResumePage() {
     return (
@@ -13,6 +15,9 @@ function ResumePage() {
             <div className="particle-con particles">
                 <Particle />
             </div>
+            <ScrollToTop showUnder={250}>
+                    <KeyboardArrowUpRounded style={{width: "45px", border: "solid", borderRadius: "0.5px"}} />
+            </ScrollToTop>
             <Resume />
             <Skills />
             <PositionsOfResponsibility />

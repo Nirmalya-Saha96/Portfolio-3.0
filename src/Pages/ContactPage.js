@@ -9,6 +9,9 @@ import Particle from '../Components/Particle';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+import ScrollToTop from 'react-scroll-up';
+import { KeyboardArrowUpRounded } from '@material-ui/icons';
+
 import ActionProvider from '../Chatbot/ActionProvider';
 import MessageParser from '../Chatbot/MessageParser';
 import config from '../Chatbot/config';
@@ -69,6 +72,9 @@ function ContactPage() {
             <div className="particle-con particles">
                 <Particle />
             </div>
+            <ScrollToTop showUnder={250}>
+                    <KeyboardArrowUpRounded style={{width: "45px", border: "solid", borderRadius: "0.5px"}} />
+            </ScrollToTop>
             <InnerLayout className={'contact-section'}>
                 <div className="left-content">
                     <div className="contact-title">

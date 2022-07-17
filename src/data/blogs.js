@@ -4,7 +4,7 @@ import blog4 from  '../img/blogs/blog4.svg';
 const blogs = [
     {
         id: 1,
-        title: '23th Rank in Institution HIT in Geeks for Geeks with 800+ score',
+        title: '24th Rank in Institution HIT in Geeks for Geeks with 800+ score',
         date: '01',
         month: 'April',
         image: blog1,
@@ -28,6 +28,14 @@ const blogs = [
     },
     {
         id: 4,
+        title: '600+ GitHub contributions Open Source SWOC, Diversion',
+        date: '01',
+        month: 'April',
+        image: blog1,
+        link: 'https://github.com/Nirmalya-Saha96'
+    },
+    {
+        id: 5,
         title: 'Milestone 1 in Google Cloud Computing Qwiklabs',
         date: '01',
         month: 'April',
@@ -35,20 +43,12 @@ const blogs = [
         link: 'https://www.qwiklabs.com/public_profiles/c537e8e5-a0df-4f4f-9feb-b95acfb46f98'
     },
     {
-        id: 5,
+        id: 6,
         title: 'Cloud Computing Badges Microsoft Azure League',
         date: '01',
         month: 'April',
         image: blog4,
         link: 'https://docs.microsoft.com/en-in/users/nirmalyasaha-1437/?WT.mc_id=welcome_2_control_video_-email-learn'
-    },
-    {
-        id: 6,
-        title: '420+ GitHub contributions Open Source SWOC, Diversion',
-        date: '01',
-        month: 'April',
-        image: blog1,
-        link: 'https://github.com/Nirmalya-Saha96'
     },
     {
         id: 7,

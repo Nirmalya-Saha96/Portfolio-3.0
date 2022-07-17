@@ -25,7 +25,7 @@ function Resume() {
                     text={'- Designed complex satellite simulation interface in a Konva Minimap & zoom controls'}
                     text1={' with  seamless functionality using react, redux'}
                     text2={'- Programmed functionalities include sharing & custom linking simulations '}
-                    text3={''}
+                    text3={'- Staged large responses in redux, increasing efficiency'}
                     text4={''}
                     text5={''}
                 />

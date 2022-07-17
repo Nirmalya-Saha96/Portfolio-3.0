@@ -44,7 +44,7 @@ function ImageSection() {
                         <p>: 21</p>
                         <p>: Indian </p>
                         <p>: West Bengal</p>
-                        <p>: Developer</p>
+                        <p>: Full Stack BlockChain & Android Developer</p>
                     </div>
                 </div>
                 </Fade>
